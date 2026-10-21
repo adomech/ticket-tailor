@@ -1,0 +1,8 @@
+parameters:
+    level: 8
+    tmpDir: /tmp/ticket-phpstan
+    paths:
+        - src
+        - config
+        - public
+        - tests

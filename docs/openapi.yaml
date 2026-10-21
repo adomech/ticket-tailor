@@ -1,0 +1,121 @@
+openapi: 3.1.0
+info: { title: Payments Dashboard API, version: 1.0.0 }
+paths:
+  /api/dashboard:
+    get:
+      parameters:
+        - { in: query, name: date, schema: { type: string, format: date } }
+        - { in: query, name: days, schema: { type: integer, enum: [1, 7, 30] } }
+      responses:
+        "200":
+          description: Dashboard report
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                required:
+                  - reportingDate
+                  - start
+                  - days
+                  - currency
+                  - earnings
+                  - lifetime
+                  - balances
+                  - availability
+                  - payouts
+                  - transactions
+                properties:
+                  reportingDate: { type: string, format: date }
+                  start: { type: string, format: date }
+                  days: { type: integer, enum: [1, 7, 30] }
+                  currency: { type: string, const: GBP }
+                  earnings: { $ref: "#/components/schemas/Totals" }
+                  lifetime: { $ref: "#/components/schemas/Totals" }
+                  balances: { $ref: "#/components/schemas/Balances" }
+                  availability:
+                    type: array
+                    items: { $ref: "#/components/schemas/Availability" }
+                  payouts:
+                    type: array
+                    items: { $ref: "#/components/schemas/Payout" }
+                  transactions:
+                    type: array
+                    items: { $ref: "#/components/schemas/Transaction" }
+        "400": { $ref: "#/components/responses/Error" }
+        "405":
+          description: Method not allowed
+          headers:
+            Allow: { schema: { type: string, const: GET } }
+          content:
+            application/json: { schema: { $ref: "#/components/schemas/Error" } }
+        "429": { $ref: "#/components/responses/Error" }
+        "500": { $ref: "#/components/responses/Error" }
+components:
+  schemas:
+    Totals:
+      type: object
+      additionalProperties: false
+      required: [gross, refunds, tailorFees, stripeFees, feeCredits, net]
+      properties:
+        gross: { type: integer }
+        refunds: { type: integer }
+        tailorFees: { type: integer }
+        stripeFees: { type: integer }
+        feeCredits: { type: integer }
+        net: { type: integer }
+    Balances:
+      type: object
+      additionalProperties: false
+      required: [bank, transit, sent, remaining, available, later]
+      properties:
+        bank: { type: integer }
+        transit: { type: integer }
+        sent: { type: integer }
+        remaining: { type: integer }
+        available: { type: integer }
+        later: { type: integer }
+    Availability:
+      type: object
+      additionalProperties: false
+      required: [date, amount, available]
+      properties:
+        date: { type: string, format: date }
+        amount: { type: integer }
+        available: { type: boolean }
+    Payout:
+      type: object
+      additionalProperties: false
+      required: [id, amount, sent, arrival, state]
+      properties:
+        id: { type: string }
+        amount: { type: integer }
+        sent: { type: string, format: date }
+        arrival: { type: string, format: date }
+        state: { type: string, enum: [arrived, in_transit] }
+    Transaction:
+      type: object
+      additionalProperties: false
+      required: [id, kind, created, amount, net, tailorFee, stripeFee, available, reference]
+      properties:
+        id: { type: string }
+        kind: { type: string, enum: [charge, refund] }
+        created: { type: string, format: date-time }
+        amount: { type: integer }
+        net: { type: integer }
+        tailorFee: { type: integer }
+        stripeFee: { type: integer }
+        available: { type: string, format: date }
+        reference: { type: string }
+    Error:
+      type: object
+      additionalProperties: false
+      required: [message, reference]
+      properties:
+        message: { type: string }
+        reference: { type: string }
+  responses:
+    Error:
+      description: Safe JSON error response
+      content:
+        application/json: { schema: { $ref: "#/components/schemas/Error" } }

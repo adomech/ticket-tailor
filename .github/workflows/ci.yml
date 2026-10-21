@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+permissions: { contents: read }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/check
+      - name: Reject generated artifacts
+        run: |
+          test ! -e backend/.phpunit.cache
+          test ! -e backend/.phpunit.result.cache
+          test ! -e backend/.phpstan
+          test ! -e backend/coverage
+          test ! -e frontend/dist
+          test ! -e frontend/coverage
+          test ! -e frontend/test-results
+          test ! -e frontend/playwright-report
+          test ! -e frontend/.vite
+          test ! -e reports
+          test -z "$(find frontend -type f -name '*.tsbuildinfo' -print -quit)"

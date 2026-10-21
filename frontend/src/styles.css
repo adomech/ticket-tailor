@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+    --color-ink: #222431;
+    --color-canvas: #faf7f4;
+    --color-peach: #f6cabd;
+    --color-yellow: #fae0ac;
+    --color-teal: #b7cdc9;
+    --color-blush: #f6ebe7;
+    --color-coral: #e69680;
+    --color-line: #d6d1cd;
+    --color-muted: #555560;
+    --color-error: #ad4932;
+    --color-focus: #0e6167;
+    --color-soft-line: #8d8782;
+    --font-sans: Arial, Helvetica, sans-serif;
+    --font-serif: Georgia, "Times New Roman", serif;
+    --breakpoint-sm: 650px;
+    --breakpoint-md: 1000px;
+    --breakpoint-lg: 1500px;
+    --radius-metric: 13px;
+    --radius-panel: 20px;
+    --text-metric-sm: 29px;
+    --text-metric-md: 38px;
+    --text-metric-lg: 42px;
+    --animate-status-pulse: status-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+    0%,
+    100% {
+        opacity: 0.35;
+        transform: scale(0.82);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+    :where(a, button, input, select, summary):focus-visible {
+        outline: 3px solid var(--color-focus);
+        outline-offset: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .motion-safe\:animate-status-pulse {
+        animation: none;
+    }
+}

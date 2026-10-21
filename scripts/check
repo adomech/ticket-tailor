@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+./scripts/clean
+trap './scripts/clean' EXIT
+docker run --rm -v "$PWD:/project" -w /project/backend composer:2.8 composer install --no-interaction
+docker run --rm -v "$PWD:/project" -w /project/backend composer:2.8 composer validate --strict
+docker run --rm -v "$PWD:/project" -w /project/backend php:8.4-cli-alpine sh -c 'vendor/bin/phpunit --do-not-cache-result && vendor/bin/phpstan analyse --memory-limit=256M --debug && vendor/bin/phpcs'
+docker run --rm -v "$PWD:/project" -v /project/frontend/node_modules -v /project/frontend/dist -w /project/frontend node:24-alpine sh -c 'npm ci && npm test -- --run && npm run lint && npm run format:check && npm run build'
+docker compose config -q

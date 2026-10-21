@@ -1,0 +1,762 @@
+{
+    "reportingDate": "2026-06-20",
+    "start": "2026-05-22",
+    "days": 30,
+    "currency": "GBP",
+    "earnings": {
+        "gross": 116250,
+        "refunds": 10750,
+        "tailorFees": 3805,
+        "stripeFees": 2831,
+        "feeCredits": 320,
+        "net": 98864
+    },
+    "lifetime": {
+        "gross": 116250,
+        "refunds": 10750,
+        "tailorFees": 3805,
+        "stripeFees": 2831,
+        "feeCredits": 320,
+        "net": 98864
+    },
+    "balances": {
+        "bank": 44536,
+        "transit": 0,
+        "sent": 44536,
+        "remaining": 54328,
+        "available": 54328,
+        "later": 0
+    },
+    "availability": [
+        {
+            "date": "2026-06-16",
+            "amount": 7962,
+            "available": true
+        },
+        {
+            "date": "2026-06-17",
+            "amount": 50746,
+            "available": true
+        },
+        {
+            "date": "2026-06-20",
+            "amount": -4380,
+            "available": true
+        }
+    ],
+    "payouts": [
+        {
+            "id": "po_0001",
+            "amount": 44536,
+            "sent": "2026-06-16",
+            "arrival": "2026-06-18",
+            "state": "arrived"
+        }
+    ],
+    "transactions": [
+        {
+            "id": "re_0004",
+            "kind": "refund",
+            "created": "2026-06-20T11:30:00Z",
+            "amount": 4500,
+            "net": -4380,
+            "tailorFee": -120,
+            "stripeFee": 0,
+            "available": "2026-06-20",
+            "reference": "ch_0007"
+        },
+        {
+            "id": "re_0003",
+            "kind": "refund",
+            "created": "2026-06-16T09:05:00Z",
+            "amount": 2250,
+            "net": -2190,
+            "tailorFee": -60,
+            "stripeFee": 0,
+            "available": "2026-06-17",
+            "reference": "ch_0050"
+        },
+        {
+            "id": "re_0002",
+            "kind": "refund",
+            "created": "2026-06-15T16:40:00Z",
+            "amount": 1500,
+            "net": -1440,
+            "tailorFee": -60,
+            "stripeFee": 0,
+            "available": "2026-06-17",
+            "reference": "ch_0042"
+        },
+        {
+            "id": "re_0001",
+            "kind": "refund",
+            "created": "2026-06-15T10:12:00Z",
+            "amount": 2500,
+            "net": -2420,
+            "tailorFee": -80,
+            "stripeFee": 0,
+            "available": "2026-06-17",
+            "reference": "ch_0034"
+        },
+        {
+            "id": "ch_0054",
+            "kind": "charge",
+            "created": "2026-06-14T20:46:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4054"
+        },
+        {
+            "id": "ch_0042",
+            "kind": "charge",
+            "created": "2026-06-14T20:22:00Z",
+            "amount": 1500,
+            "net": 1399,
+            "tailorFee": 60,
+            "stripeFee": 41,
+            "available": "2026-06-17",
+            "reference": "TT-4042"
+        },
+        {
+            "id": "ch_0053",
+            "kind": "charge",
+            "created": "2026-06-14T19:44:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4053"
+        },
+        {
+            "id": "ch_0041",
+            "kind": "charge",
+            "created": "2026-06-14T19:20:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-17",
+            "reference": "TT-4041"
+        },
+        {
+            "id": "ch_0052",
+            "kind": "charge",
+            "created": "2026-06-14T18:42:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-17",
+            "reference": "TT-4052"
+        },
+        {
+            "id": "ch_0040",
+            "kind": "charge",
+            "created": "2026-06-14T18:18:00Z",
+            "amount": 4500,
+            "net": 4297,
+            "tailorFee": 120,
+            "stripeFee": 83,
+            "available": "2026-06-17",
+            "reference": "TT-4040"
+        },
+        {
+            "id": "ch_0051",
+            "kind": "charge",
+            "created": "2026-06-14T17:40:00Z",
+            "amount": 3200,
+            "net": 3041,
+            "tailorFee": 94,
+            "stripeFee": 65,
+            "available": "2026-06-17",
+            "reference": "TT-4051"
+        },
+        {
+            "id": "ch_0039",
+            "kind": "charge",
+            "created": "2026-06-14T17:16:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4039"
+        },
+        {
+            "id": "ch_0050",
+            "kind": "charge",
+            "created": "2026-06-14T16:38:00Z",
+            "amount": 4500,
+            "net": 4297,
+            "tailorFee": 120,
+            "stripeFee": 83,
+            "available": "2026-06-17",
+            "reference": "TT-4050"
+        },
+        {
+            "id": "ch_0038",
+            "kind": "charge",
+            "created": "2026-06-14T16:14:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4038"
+        },
+        {
+            "id": "ch_0049",
+            "kind": "charge",
+            "created": "2026-06-14T15:36:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4049"
+        },
+        {
+            "id": "ch_0037",
+            "kind": "charge",
+            "created": "2026-06-14T15:12:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-17",
+            "reference": "TT-4037"
+        },
+        {
+            "id": "ch_0060",
+            "kind": "charge",
+            "created": "2026-06-14T14:58:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4060"
+        },
+        {
+            "id": "ch_0048",
+            "kind": "charge",
+            "created": "2026-06-14T14:34:00Z",
+            "amount": 1500,
+            "net": 1399,
+            "tailorFee": 60,
+            "stripeFee": 41,
+            "available": "2026-06-17",
+            "reference": "TT-4048"
+        },
+        {
+            "id": "ch_0036",
+            "kind": "charge",
+            "created": "2026-06-14T14:10:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4036"
+        },
+        {
+            "id": "ch_0059",
+            "kind": "charge",
+            "created": "2026-06-14T13:56:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4059"
+        },
+        {
+            "id": "ch_0047",
+            "kind": "charge",
+            "created": "2026-06-14T13:32:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4047"
+        },
+        {
+            "id": "ch_0035",
+            "kind": "charge",
+            "created": "2026-06-14T13:08:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-17",
+            "reference": "TT-4035"
+        },
+        {
+            "id": "ch_0058",
+            "kind": "charge",
+            "created": "2026-06-14T12:54:00Z",
+            "amount": 1500,
+            "net": 1399,
+            "tailorFee": 60,
+            "stripeFee": 41,
+            "available": "2026-06-17",
+            "reference": "TT-4058"
+        },
+        {
+            "id": "ch_0046",
+            "kind": "charge",
+            "created": "2026-06-14T12:30:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4046"
+        },
+        {
+            "id": "ch_0034",
+            "kind": "charge",
+            "created": "2026-06-14T12:06:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4034"
+        },
+        {
+            "id": "ch_0057",
+            "kind": "charge",
+            "created": "2026-06-14T11:52:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-17",
+            "reference": "TT-4057"
+        },
+        {
+            "id": "ch_0045",
+            "kind": "charge",
+            "created": "2026-06-14T11:28:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4045"
+        },
+        {
+            "id": "ch_0033",
+            "kind": "charge",
+            "created": "2026-06-14T11:04:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4033"
+        },
+        {
+            "id": "ch_0056",
+            "kind": "charge",
+            "created": "2026-06-14T10:50:00Z",
+            "amount": 3200,
+            "net": 3041,
+            "tailorFee": 94,
+            "stripeFee": 65,
+            "available": "2026-06-17",
+            "reference": "TT-4056"
+        },
+        {
+            "id": "ch_0044",
+            "kind": "charge",
+            "created": "2026-06-14T10:26:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-17",
+            "reference": "TT-4044"
+        },
+        {
+            "id": "ch_0032",
+            "kind": "charge",
+            "created": "2026-06-14T10:02:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-17",
+            "reference": "TT-4032"
+        },
+        {
+            "id": "ch_0055",
+            "kind": "charge",
+            "created": "2026-06-14T09:48:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4055"
+        },
+        {
+            "id": "ch_0043",
+            "kind": "charge",
+            "created": "2026-06-14T09:24:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-17",
+            "reference": "TT-4043"
+        },
+        {
+            "id": "ch_0031",
+            "kind": "charge",
+            "created": "2026-06-14T09:00:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-17",
+            "reference": "TT-4031"
+        },
+        {
+            "id": "ch_0024",
+            "kind": "charge",
+            "created": "2026-06-13T20:46:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4024"
+        },
+        {
+            "id": "ch_0012",
+            "kind": "charge",
+            "created": "2026-06-13T20:22:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4012"
+        },
+        {
+            "id": "ch_0023",
+            "kind": "charge",
+            "created": "2026-06-13T19:44:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-16",
+            "reference": "TT-4023"
+        },
+        {
+            "id": "ch_0011",
+            "kind": "charge",
+            "created": "2026-06-13T19:20:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-16",
+            "reference": "TT-4011"
+        },
+        {
+            "id": "ch_0022",
+            "kind": "charge",
+            "created": "2026-06-13T18:42:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-16",
+            "reference": "TT-4022"
+        },
+        {
+            "id": "ch_0010",
+            "kind": "charge",
+            "created": "2026-06-13T18:18:00Z",
+            "amount": 1500,
+            "net": 1399,
+            "tailorFee": 60,
+            "stripeFee": 41,
+            "available": "2026-06-16",
+            "reference": "TT-4010"
+        },
+        {
+            "id": "ch_0021",
+            "kind": "charge",
+            "created": "2026-06-13T17:40:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4021"
+        },
+        {
+            "id": "ch_0009",
+            "kind": "charge",
+            "created": "2026-06-13T17:16:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4009"
+        },
+        {
+            "id": "ch_0020",
+            "kind": "charge",
+            "created": "2026-06-13T16:38:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-16",
+            "reference": "TT-4020"
+        },
+        {
+            "id": "ch_0008",
+            "kind": "charge",
+            "created": "2026-06-13T16:14:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-16",
+            "reference": "TT-4008"
+        },
+        {
+            "id": "ch_0019",
+            "kind": "charge",
+            "created": "2026-06-13T15:36:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4019"
+        },
+        {
+            "id": "ch_0007",
+            "kind": "charge",
+            "created": "2026-06-13T15:12:00Z",
+            "amount": 4500,
+            "net": 4297,
+            "tailorFee": 120,
+            "stripeFee": 83,
+            "available": "2026-06-16",
+            "reference": "TT-4007"
+        },
+        {
+            "id": "ch_0030",
+            "kind": "charge",
+            "created": "2026-06-13T14:58:00Z",
+            "amount": 3200,
+            "net": 3041,
+            "tailorFee": 94,
+            "stripeFee": 65,
+            "available": "2026-06-16",
+            "reference": "TT-4030"
+        },
+        {
+            "id": "ch_0018",
+            "kind": "charge",
+            "created": "2026-06-13T14:34:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-16",
+            "reference": "TT-4018"
+        },
+        {
+            "id": "ch_0006",
+            "kind": "charge",
+            "created": "2026-06-13T14:10:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4006"
+        },
+        {
+            "id": "ch_0029",
+            "kind": "charge",
+            "created": "2026-06-13T13:56:00Z",
+            "amount": 3200,
+            "net": 3041,
+            "tailorFee": 94,
+            "stripeFee": 65,
+            "available": "2026-06-16",
+            "reference": "TT-4029"
+        },
+        {
+            "id": "ch_0017",
+            "kind": "charge",
+            "created": "2026-06-13T13:32:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-16",
+            "reference": "TT-4017"
+        },
+        {
+            "id": "ch_0005",
+            "kind": "charge",
+            "created": "2026-06-13T13:08:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4005"
+        },
+        {
+            "id": "ch_0028",
+            "kind": "charge",
+            "created": "2026-06-13T12:54:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-16",
+            "reference": "TT-4028"
+        },
+        {
+            "id": "ch_0016",
+            "kind": "charge",
+            "created": "2026-06-13T12:30:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4016"
+        },
+        {
+            "id": "ch_0004",
+            "kind": "charge",
+            "created": "2026-06-13T12:06:00Z",
+            "amount": 3200,
+            "net": 3041,
+            "tailorFee": 94,
+            "stripeFee": 65,
+            "available": "2026-06-16",
+            "reference": "TT-4004"
+        },
+        {
+            "id": "ch_0027",
+            "kind": "charge",
+            "created": "2026-06-13T11:52:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4027"
+        },
+        {
+            "id": "ch_0015",
+            "kind": "charge",
+            "created": "2026-06-13T11:28:00Z",
+            "amount": 800,
+            "net": 723,
+            "tailorFee": 46,
+            "stripeFee": 31,
+            "available": "2026-06-16",
+            "reference": "TT-4015"
+        },
+        {
+            "id": "ch_0003",
+            "kind": "charge",
+            "created": "2026-06-13T11:04:00Z",
+            "amount": 2200,
+            "net": 2075,
+            "tailorFee": 74,
+            "stripeFee": 51,
+            "available": "2026-06-16",
+            "reference": "TT-4003"
+        },
+        {
+            "id": "ch_0026",
+            "kind": "charge",
+            "created": "2026-06-13T10:50:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-16",
+            "reference": "TT-4026"
+        },
+        {
+            "id": "ch_0014",
+            "kind": "charge",
+            "created": "2026-06-13T10:26:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-16",
+            "reference": "TT-4014"
+        },
+        {
+            "id": "ch_0002",
+            "kind": "charge",
+            "created": "2026-06-13T10:02:00Z",
+            "amount": 1250,
+            "net": 1157,
+            "tailorFee": 55,
+            "stripeFee": 38,
+            "available": "2026-06-16",
+            "reference": "TT-4002"
+        },
+        {
+            "id": "ch_0025",
+            "kind": "charge",
+            "created": "2026-06-13T09:48:00Z",
+            "amount": 4500,
+            "net": 4297,
+            "tailorFee": 120,
+            "stripeFee": 83,
+            "available": "2026-06-16",
+            "reference": "TT-4025"
+        },
+        {
+            "id": "ch_0013",
+            "kind": "charge",
+            "created": "2026-06-13T09:24:00Z",
+            "amount": 2500,
+            "net": 2365,
+            "tailorFee": 80,
+            "stripeFee": 55,
+            "available": "2026-06-16",
+            "reference": "TT-4013"
+        },
+        {
+            "id": "ch_0001",
+            "kind": "charge",
+            "created": "2026-06-13T09:00:00Z",
+            "amount": 1500,
+            "net": 1399,
+            "tailorFee": 60,
+            "stripeFee": 41,
+            "available": "2026-06-16",
+            "reference": "TT-4001"
+        }
+    ]
+}
